@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(270deg, cyan, lightgreen, lightpink);
+    background-color: azure;
+}
+
+.calculator{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border: 10px ridge;
+    border-radius: 10px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(75deg, #ff6ec4, #7873f5);
+    width: 250px;
+    animation: glow 1.5s infinite alternate;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff6ec4, 0 0 20px #ff6ec4;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ff6ec4 0 0 20px #ff6ec4, 0 0 30px #ff6ec4;
+    }
+
+    from {
+        box-shadow: 0 0 10px #7873f5 0 0 20px #7873f5 0 0 30px #7873f5;
+    }
+}
+
+.screen{
+    width: 224px;
+    height: 10vh;
+    background-color: rgb(176, 205, 176);
+    font-size: 40px;
+    text-align: end;
+    padding: 6px;
+    overflow: auto;
+    
+}
+
+.buttons{
+    width: 232px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: rgb(131, 129, 129);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 4px;
+}
+
+button:hover{
+    background-color: rgb(111, 231, 198);
+    box-shadow: 0 0 10px #fff, 0 0 20 px #fff, 0 0 30px #ff6ec4, 0 0 40px #ff6ec4;
+}
+
+button:active {
+    background-color: rgb(232, 232, 232);
+    
+}
+
+#equals{
+    background-color: rgb(218,2,2);
+}
+
+#equals:hover{
+    background-color: rgb(198, 1, 1);
+}
+
+#clear{
+    background-color: rgb(252, 226, 27);
+    width: auto;
+    font-size: 30px;
+    /* animation: button-glow 1s infinite alternate; */
+}
+/* @keyframes button-glow {
+    0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff6ec4, 0 0 20px #ff6ec4, 0 0 25px #ff6ec4, 0 0 30px #ff6ec4, 0 0 35px #ff6ec4;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #7873f5, 0 0 20px #7873f5, 0 0 25px #7873f5, 0 0 30px #7873f5, 0 0 35px #7873f5;
+    }
+} */
+
+#clear:hover{
+    background-color: rgb(252, 201, 17);
+    /* box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff6ec4, 0 0 20px #ff6ec4; */
+}
+
+#rm {
+    background-color: red;
+}
+
+#rm:hover{
+    background-color: brown;
+}
